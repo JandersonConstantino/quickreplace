@@ -74,7 +74,7 @@ fn main() {
         }
     };
 
-    match fs::write(&args.output, &replaced_data) {
+    match fs::write(&args.output, replaced_data) {
         Ok(_) => (),
         Err(e) => {
             eprintln!(
